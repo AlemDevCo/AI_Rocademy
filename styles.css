@@ -1,0 +1,122 @@
+/* Reset some default styles for consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('hero-background.jpg'); /* Add your image path here */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* About Section Styles */
+.about {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Featured Tutorials and Latest Articles Styles */
+.featured, .latest {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+.featured h2, .latest h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Styles (for smaller screens) */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul {
+        display: block;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    nav.active ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
